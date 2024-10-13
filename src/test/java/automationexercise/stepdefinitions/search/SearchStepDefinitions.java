@@ -37,7 +37,6 @@ public class SearchStepDefinitions extends PageObject {
                 Enter.theValue(term).into(theSearchField)
                         .then(Click.on(theSubmitSearchButton))
         );
-
     }
 
     @Then("{actor} should see information about {string}")
