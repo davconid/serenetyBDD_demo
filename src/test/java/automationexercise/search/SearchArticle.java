@@ -1,4 +1,4 @@
-package starter.search;
+package automationexercise.search;
 
 import net.serenitybdd.screenplay.targets.Target;
 
