@@ -38,7 +38,6 @@ public class SearchStepDefinitions extends PageObject {
                         .then(Click.on(theSubmitSearchButton))
         );
 
-
     }
 
     @Then("{actor} should see information about {string}")
