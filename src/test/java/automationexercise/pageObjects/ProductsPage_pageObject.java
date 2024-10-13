@@ -13,5 +13,4 @@ public class ProductsPage_pageObject {
     public static final Target theSearchResults = ElementsLocated.by(".productinfo p");
     public static final SearchableTarget theSearchedProductsTitleWithTextComparison = PageElement.containingTextIgnoringCase(".title.text-center", "Searched products");
     public static final SearchableTarget theSearchedProductsTitle = PageElement.withCSSClass(".title.text-center");
-
 }
