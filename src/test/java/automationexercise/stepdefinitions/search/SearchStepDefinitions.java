@@ -36,23 +36,8 @@ public class SearchStepDefinitions extends PageObject {
 
     @Then("{actor} should see information about {string}")
     public void should_see_information_about(Actor actor, String term) {
-        //using assertion with page object
-//        actor.attemptsTo(
-//                Ensure.that(theSearchResults).textValues().allMatch(
-//                        "The word '" + term + "' is displayed in every products",
-//                        product -> product.contains(term)
-//                ),
-//                Ensure.that(theSearchResults).textValues().hasSize(3)
-//
-//       );
-
         //using screenplay question
         actor.should(seeThat(Text.ofEach(theSearchResults).asString(), containsString(term)));
-
-        //using assertion with question
-//        actor.attemptsTo(
-//                Ensure.that(theTextOfEachOfTheElementsDisplayedAfterTheSearch()).containsAnyOf(term)
-//        );
     }
 
 }

@@ -13,7 +13,7 @@ Feature: Search by keyword from the home page
     When he looks up "Jeans"
     Then he should see information about "Jeans"
 
-  @search
+  @search_ScenarioOutline
   Scenario Outline: Searching for a product
     Given John Do is looking for a product on automationexercise.com
     When he looks up "<term>"
@@ -24,3 +24,4 @@ Feature: Search by keyword from the home page
       | Jeans  |
       | Frozen |
       | Saree  |
+
