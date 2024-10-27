@@ -7,20 +7,20 @@ Feature: Search by keyword from the home page
   @search=unknownUser
   Rule: a non connected user should be able to search for a product from the home page
 
-  @search=apple
+  @search
   Example: Searching for 'macbook pro 16 pouces'
     Given John Do is looking for a product on automationexercise.com
     When he looks up "Jeans"
     Then he should see information about "Jeans"
 
-  @severalSearches
+  @search
   Scenario Outline: Searching for a product
     Given John Do is looking for a product on automationexercise.com
     When he looks up "<term>"
     Then he should see information about "<term>"
 
     Examples:
-      | term                     |
-      | macbook pro m3 16 pouces |
-      | BDD in action            |
-      | Bureau assis debout      |
+      | term   |
+      | Jeans  |
+      | Frozen |
+      | Saree  |

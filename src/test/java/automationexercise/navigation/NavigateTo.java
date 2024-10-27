@@ -5,9 +5,8 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 
 public class NavigateTo {
-    public static Performable TheAutomationexerciseHomePage() {
+    public static Performable theAutomationexerciseHomePage() {
         return Task.where("{0} opens the automationexercise home page",
                 Open.browserOn().thePageNamed("TheAutomationexerciseHomePage"));
-//                Open.browserOn().the(TheAutomationexerciseHomePage.class));
     }
 }
