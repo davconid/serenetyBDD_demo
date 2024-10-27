@@ -8,7 +8,7 @@ Feature: Search by keyword from the home page
   Rule: a non connected user should be able to search for a product from the home page
 
   @search
-  Example: Searching for 'macbook pro 16 pouces'
+  Example: Searching for a 'jeans'
     Given John Do is looking for a product on automationexercise.com
     When he looks up "Jeans"
     Then he should see information about "Jeans"

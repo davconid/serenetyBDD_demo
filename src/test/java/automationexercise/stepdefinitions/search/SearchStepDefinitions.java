@@ -35,9 +35,9 @@ public class SearchStepDefinitions extends PageObject {
     }
 
     @Then("{actor} should see information about {string}")
-    public void should_see_information_about(Actor actor, String term) {
+    public void should_see_information_about(Actor actor, String theSearchTerm) {
+        //using custom question
         //using screenplay question
-        actor.should(seeThat(Text.ofEach(theSearchResults).asString(), containsString(term)));
+        actor.should(seeThat(Text.ofEach(theSearchResults).asString(), containsString(theSearchTerm)));
     }
-
 }
